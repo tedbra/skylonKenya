@@ -1,0 +1,8 @@
+# Ignore virtual environment
+skylonvenv/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore system files
+.DS_Store
