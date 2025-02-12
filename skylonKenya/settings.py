@@ -137,12 +137,3 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'skyloneducation@gmail.com'  # Your Gmail address
-# EMAIL_HOST_PASSWORD = 'skylonSCHOOLS2024'
-
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # For development
-# For production, use an actual email service (see below)
