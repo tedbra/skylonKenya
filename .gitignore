@@ -6,3 +6,6 @@ skylonvenv/
 
 # Ignore system files
 .DS_Store
+
+# Ignore the static folder
+static/
