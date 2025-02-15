@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<!-- about  -->
+<div class="about">
+  <div class="container"   style="margin-top:150px">
+    <div class="row">
+
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="about-box">
+          <h2>{{ job.title}}</h2>
+          Posted Date: <strong class="yellow">{{job.date_added}}</strong>
+          <br/>Location: <strong class="yellow">{{job.location}}</strong>
+        </div>
+      </div>
+
+      
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="top:30px;">
+          <h3><strong class="yellow" style="top:30px;">Introduction</strong></h3>
+          <p style="top: 10px;"> {{ job.introduction}}</p>
+      </div>
+
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="top:30px;">
+        <h3><strong class="yellow" style="top:30px;">Responsibilities</strong></h3>
+        <p style="top: 10px;"> {{ job.responsibilities}}</p>
+    </div>
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="top:30px;">
+      <h4><strong class="yellow">Requirements</strong></h4>
+      <p style="top: 10px;"> {{ job.Requirements}}</p>
+    </div>
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="top:30px;">
+      <h4><strong class="yellow">Benefits</strong></h4>
+      <p style="top: 10px;"> {{ job.Benefits}}</p>
+    </div>
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="top:30px;">
+      <h4><strong class="yellow">.</strong></h4>
+      <p style="top: 10px;"> {{ job.footmessage}}</p>
+    </div>
+
+    </div>
+  </div>
+</div>
+<!-- end abouts -->
+
+{% endblock %}

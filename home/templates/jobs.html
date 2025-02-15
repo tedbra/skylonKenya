@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load static %}
 
 
@@ -5,28 +6,23 @@
 
 
 <!-- about  -->
-<div id="about" class="about">
-  <div class="container">
+<div class="about">
+  <div class="container"   style="margin-top:150px">
     <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <div class="about-box">
-          <h2>Our <strong class="yellow">Mission</strong></h2>
-          <p> PUT ALL YOUR TEXT HERE</p>
+          <h2>Job <strong class="yellow">Positions</strong></h2>
+          <br/>
+
+          {% for job in object_list %}
+          <div style="border: 2px solid #D9C4FF;">
+              <h3 style="text-decoration: solid;"> {{job}}</h3> <a href="{% url 'job-detail' job.id %}" style="text-transform: none;">Read more...</a>
+          </div>
+          {% endfor %}
+
         </div>
       </div>
-
-      
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="about-box">
-          <h2><strong class="yellow">Our </strong>Vision</h2>
-          <p> Our vision is to be a leading educational community, renowned for nurturing individual potential and 
-            fostering a lifelong love of learning. We aspire to empower each student to achieve academic excellence, 
-            develop strong character, and become a compassionate and engaged global citizen.  We envision a future 
-            where Skylon graduates are confident, innovative, and equipped to make a positive impact on the world.  
-            By providing a personalized and holistic education, 
-            we <span style="font-weight: bold;">cultivate excellence one student at a time</span>, shaping future leaders and inspiring them to reach their full potential.</p>
-        </div>
-      </div>      
     </div>
   </div>
 </div>
