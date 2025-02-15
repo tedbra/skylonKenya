@@ -18,7 +18,7 @@
      box-sizing: border-box !important;
 }
  html {
-     scroll-behavior: smooth;
+     /*scroll-behavior: smooth;*/
 }
  body {
      color: #666666;
@@ -977,7 +977,7 @@
 
 .mean-last {
    display: inline-block !important;
-background: #0f052f;
+background: white;
 margin: 0 !important;
 padding: 30px 36px 30px 16px;
 float: right;
@@ -999,7 +999,7 @@ width: 24%;
     width: 44px;
 height: 88px;
 margin-left: -51px;
-    background: blue;
+    background: white;
     display: block;
     content: "";
     position: absolute;

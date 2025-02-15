@@ -58,29 +58,20 @@
                 </div>
               </div>
             </div>
-            <!--div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
-              <div class="full">
-                <div>
-                  <div class="logo">
-                    <a href="{% url 'home' %}" style="color: #6a0dad;">Skylon <span class="py-8" style="color: #fd5e0f; font-size:large;">Schools Kenya</span></a>
-                    <a href="{% url 'home' %}" style="color: #fd5e0f; font-size:large;">Schools Kenya</a>
-                  </div>
-                </div>
-              </div>
-            </div-->
+
             <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
               <div class="header_information">
                 <div class="menu-area">
                   <div class="limit-box">
                     <nav class="main-menu ">
                       <ul class="menu-area-main">
-                        <li class="active"> <a href="{% url 'home' %}#welcome">Home</a> </li>
-                        <li> <a href="{% url 'home' %}#about">About Us</a> </li>
-                        <li> <a href="{% url 'home' %}#classes">Grades</a> </li>
-                        <li> <a href="{% url 'home' %}#courses">Teaching Approach</a> </li>
-                        <li> <a href="{% url 'home' %}#learn">OUR Campus </a> </li>
-                        <li> <a href="{% url 'home' %}#contact">Contact</a> </li>
-                        <li> <a href="{% url 'home' %}#jobs">JOBS</a> </li>
+                        <li class="active"> <a href="{% url 'home' %}">Home</a> </li>
+                        <li> <a href="{% url 'home' %}/#about">About Us</a> </li>
+                        <li> <a href="#classes">Grades</a> </li>
+                        <li> <a href="#courses">Teaching Approach</a> </li>
+                        <li> <a href="#learn">OUR Campus </a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
+                        <li> <a href="#jobs">JOBS</a> </li>
                       </ul>
                     </nav>
                   </div>
@@ -94,7 +85,7 @@
     <!-- end header inner -->
 
     <!-- end header -->
-    <section id="welcome" class="slider_section">
+    <section class="slider_section">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -201,14 +192,13 @@
               At Skylon, we believe in creating a nurturing and inclusive environment where every student feels valued, respected, empowered to succeed and be EXCELLENT.</p>
         </div>
       </div>
-
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
           <figure><img src="{% static 'images/school_bus.jpeg' %}" alt="#" /></figure>
         </div>
       </div>
       
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12" style="top:50px">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
           <h2><strong class="yellow">Our </strong>Vision</h2>
           <p> Our vision is to be a leading educational community, renowned for nurturing individual potential and 
@@ -216,156 +206,22 @@
             develop strong character, and become a compassionate and engaged global citizen.  We envision a future 
             where Skylon graduates are confident, innovative, and equipped to make a positive impact on the world.  
             By providing a personalized and holistic education, 
-            we <span style="font-weight: bold;">cultivate excellence one student at a time</span>, shaping future leaders and inspiring them to reach their full potential.  </p>
+            we <span style="font-weight: bold;">cultivate excellence one student at a time</span>, shaping future leaders and inspiring them to reach their full potential.</p>
         </div>
       </div>
-      
+
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
           <figure><img src="{% static 'images/2_museum.jpeg' %}" alt="#" /></figure>
         </div>
       </div>
-
+      
     </div>
   </div>
 </div>
 <!-- end abouts -->
 
 
-
-<!-- our -->
-<div id="classes" class="important">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="titlepage">
-          <h2>Classes <strong class="yellow">We Offer</strong></h2>
-          <span>We offer classes spanning from Kindergarten, primary to Junior Secondary in our Kamulu Campus</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="important_bg"  style="background-color: #e3cef3;">
-    <div class="container">
-      <div class="row">
-
-        <div class="col col-sm-3 col-xs-6">
-          <div class="important_box">
-            <h3>Kindergarten</h3>
-            <p><span>Reception</span></p>
-            <p><span>Playgroup 1</span></p>
-            <p><span>Playgroup 2</span></p>
-          </div>
-        </div>
-        <div class="col col-sm-3 col-xs-6">
-          <div class="important_box">
-            <h3>Junior Primary</h3>
-            <p><span>Grade 1</span></p>
-            <p><span>Grade 2</span></p>
-            <p><span>Grade 3</span></p>
-          </div>
-        </div>
-        <div class="col col-sm-3 col-xs-6">
-          <div class="important_box">
-            <h3>Primary</h3>            
-            <p><span>Grade 4</span></p>
-            <p><span>Grade 5</span></p>
-            <p><span>Grade 6</span></p>
-          </div>
-        </div>
-        <div class="col col-sm-3 col-xs-6">
-          <div class="important_box">
-            <h3>Junior Secondary</h3>
-            <p><span>Grade 7</span></p>
-            <p><span>Grade 8</span></p>
-            <p><span>Grade 9</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- end our -->
-<!-- Courses -->
-<div id="courses" class="Courses">
-  <div class="container-fluid padding_left3">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="box_bg">
-          <div class="box_bg_img">
-            <div class="row">
-
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="{% static 'images/3_excellence.png'%}"></figure>
-                  <div class="overlay">
-                    <h3>Academic Excellence</h3>
-                    <p>Building strong foundations, igniting potential, and celebrating every child's unique learning journey.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="{% static 'images/3_technology.png' %}"></figure>
-                  <div class="overlay">
-                    <h3>Digital Technology</h3>
-                    <p>Empowering young learners with digital skills for a bright future:  innovation, creativity, and technology use to match up with their era.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="{% static 'images/3_curricular.png'%}"></figure>
-                  <div class="overlay">
-                    <h3>Co-curricular Activities</h3>
-                    <p>Exploring passions, building teamwork, and discovering talents beyond the classroom: enriching education through co-curricular activities.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="{% static 'images/3_religious.png' %}"></figure>
-                  <div class="overlay">
-                    <h3>Ethical & Religious Ethos</h3>
-                    <p>Fostering respect, empathy, and understanding: building a community grounded in strong ethical and religious values.</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="box_text">
-          <div class="titlepage" style="align-items: center;">
-            <h2 style="text-align: center;">Teaching <strong class="yellow"> Approach</strong></h2>
-          </div>
-          <p style="text-align: center; color: #6a0dad; font-size: x-large;">Teaching Staff </p>
-          <p style="text-align: center;"> We select only the best and certified educators with the credentials and 
-            expertise to effectively hone students' skills. </p><br/>
-
-          <p style="text-align: center; color:#fd5e0f; font-size: x-large;">Study Tablets</p>
-          <p style="text-align: center;"> Installing tablets and Computers to help students enhance their digital skills </p><br/>
-
-          <p style="text-align: center; color:#6a0dad; font-size: x-large;">Football Pitch & Playground</p>
-          <p style="text-align: center;"> Our 3-acre campus features a large football and handball pitch, along with a recreational space conducive to relaxation</p><br/>
-            
-          <p style="text-align: center; color:#fd5e0f; font-size: x-large;">Leadership Development</p>
-          <p style="text-align: center;"> We engage students in collaborative projects and problem-solving activities that foster responsibility, critical thinking, and effective communication</p><br/>
-
-        </div>
-      </div> 
-    </div>
-  </div>
-</div>
-<!-- end Courses -->
 
 <!-- learn -->
 
@@ -539,7 +395,7 @@
 
                       <div class="col-lg-3 col-md-6 col-sm-6 ">
                         <div class="address">
-                          <a href="{% url 'home' %}"> <img src="{% static 'images/logo_down.png' %}" alt="logo"></a>
+                          <a href="index.html"> <img src="{% static 'images/logo_down.png' %}" alt="logo"></a>
                         </div>
                       </div>
                     </div>

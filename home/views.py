@@ -1,10 +1,12 @@
 from django.shortcuts import render
 # from django.core.mail import send_mail
+from django.views.generic import ListView, DetailView
+from .models import Job
 
 # Create your views here.
 
 def HomeView(request):
-    return render(request, 'index.html',{})
+    return render(request, 'home.html',{})
 
 
 # def contact(request):
@@ -25,3 +27,21 @@ def HomeView(request):
 #     return render(request, 'index.html')  # Render the contact form
 
 
+class JobListView(ListView):
+
+    model = Job
+    ordering = ['-id']
+    template_name = 'jobs.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(JobListView, self).get_context_data(*args, **kwargs)
+        return context 
+
+class JobDetailView(DetailView):
+    model = Job
+    template_name = 'job_details.html'
+
+    def get_context_data (self, *args,**kwargs):
+        context = super(JobDetailView, self).get_context_data(*args,**kwargs)
+        return context
+    

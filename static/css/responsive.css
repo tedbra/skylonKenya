@@ -149,7 +149,7 @@
 }
 }
  @media (min-width: 992px) and (max-width: 1199px) {
-      .mean-last {display: none !important;}
+      .mean-last {display:none !important;}
       .logo {
    padding-bottom: 6px;
     
@@ -178,13 +178,17 @@
 }
  @media (min-width: 768px) and (max-width: 991px) {
     .logo {
-   padding-bottom: 6px;
+        padding-bottom: 6px;
+
+        f
+
+         
     
 }
-     .mean-last {display: none !important;}
+     .mean-last {display: block !important;}
     
      .main-menu ul>li a {
-             padding: 8px 2px;
+         padding: 8px 2px;
          font-size: 11px;
     }
      .full-slider_cont h1 {
@@ -331,7 +335,7 @@ max-width: 122px;
      .menu-area-main li.active a {
         background: inherit;
     }
-    .mean-last {display: none !important;}
+    .mean-last {display: block !important;}
     .mean-container .mean-bar {margin-top: 15px;}
     .menu-area {padding-right: 0px}
      .text-bg h1 {
