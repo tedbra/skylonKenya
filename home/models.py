@@ -29,3 +29,13 @@ class Job(models.Model):
             print("Why is it going here when there is data in payment history")
 
         super(Job, self).save(*args, **kwargs)
+
+class Contact(models.Model):
+    name = models.CharField(max_length=200, null=True, blank=True, verbose_name='Your Name')
+    phone = models.CharField(max_length=200, null=True, blank=True, verbose_name='Phone Number')
+    email = models.CharField(max_length=200, null=True, blank=True, verbose_name='Your Email')
+    message = models.TextField(blank=True, verbose_name='Message')
+    date_send = models.DateTimeField(auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.phone + ' | ' + str(self.date_send.strftime("%d-%m-%Y") )

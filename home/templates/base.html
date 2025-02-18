@@ -69,9 +69,9 @@
                         <li> <a href="{% url 'home' %}#about">About Us</a> </li>
                         <li> <a href="{% url 'home' %}#classes">Grades</a> </li>
                         <li> <a href="{% url 'home' %}#courses">Teaching Approach</a> </li>
-                        <li> <a href="{% url 'home' %}#learn">OUR Campus </a></li>
+                        <li> <a href="#learn">OUR Campus </a></li>
                         <li> <a href="{% url 'jobs' %}">Jobs</a> </li>
-                        <li> <a href="{% url 'home' %}#contact">Contact</a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
                         <li><a></a> </li>
                       </ul>
                     </nav>
@@ -192,27 +192,29 @@
         </div>
 
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-          <form id="myform" class="contact_bg">
+          <form id="myform" class="contact_bg" method="post" action="{% url 'process_footer_contact' %}">
+            {% csrf_token %}
             <div class="row">
               <div class="col-md-12">
                 <div class="titlepage">
                   <h2>Contact <strong class="yellow">us</strong></h2>
                 </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Email" type="text" name="Your Email">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Phone" type="text" name="Your Phone">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <button class="send">Send</button>
-                </div>
+              </div>
+              <div class="col-md-12">
+                {{contact_form.name}}
+              </div>
+              <div class="col-md-12">
+                {{ contact_form.email }}
+              </div>
+              <div class="col-md-12">
+                {{ contact_form.phone }}
+              </div>
+              <div class="col-md-12">
+                {{ contact_form.message }}
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <button class="send">Send</button>
+              </div>
               </div>
             </form>
           </div>
