@@ -17,7 +17,8 @@
 
           {% for job in object_list %}
           <div style="border: 2px solid #D9C4FF;">
-              <h3 style="text-decoration: solid;"> {{job}}</h3> <a href="{% url 'job-detail' job.id %}" style="text-transform: none;">Read more...</a>
+              <h3 style="text-decoration: solid;"> {{job}}</h3> 
+              <a href="{% url 'job-detail' job.id %}" style="text-transform: none;">Read more...</a>
           </div>
           {% endfor %}
 
