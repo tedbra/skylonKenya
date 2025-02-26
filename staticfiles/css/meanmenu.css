@@ -5,9 +5,10 @@
      display: none;
 }
  .mean-container .mean-bar {
-     background: #200769;
+     background: rgb(253,94,15);
+     background: linear-gradient(45deg, rgba(106,13,173,1) 0%, rgba(253,94,15,1) 100%);
      float: left;
-     min-height: 40px;
+     min-height: 80px;
      padding: 5px 0;
      position: relative;
      width: 100%;
