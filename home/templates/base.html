@@ -68,7 +68,7 @@
                         <li class="active"> <a href="{% url 'home' %}#welcome">Home</a> </li>
                         <li> <a href="{% url 'home' %}#about">About Us</a> </li>
                         <li> <a href="{% url 'home' %}#classes">Grades</a> </li>
-                        <li> <a href="{% url 'home' %}#courses">Teaching Approach</a> </li>
+                        <li> <a href="{% url 'home' %}#fees">FEES & Trips</a> </li>
                         <li> <a href="#learn">OUR Campus </a></li>
                         <li> <a href="{% url 'jobs' %}">Jobs</a> </li>
                         <li> <a href="#contact">Contact</a> </li>
@@ -94,11 +94,12 @@
 
 
 <div id="learn" class="learn">
+  <hr>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="titlepage">
-          <h2>Our <strong class="yellow">Campus</strong></h2>
+          <h2 style="text-align: center;">Our <strong class="yellow">Campus</strong></h2>
           <span>Swipe LEFT or RIGHT to see pictures.</span>
         </div>
       </div>
@@ -204,13 +205,13 @@
                 {{contact_form.name}}
               </div>
               <div class="col-md-12">
-                {{ contact_form.email }}
+                {{contact_form.email }}
               </div>
               <div class="col-md-12">
-                {{ contact_form.phone }}
+                {{contact_form.phone }}
               </div>
               <div class="col-md-12">
-                {{ contact_form.message }}
+                {{contact_form.message }}
               </div>
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <button class="send">Send</button>
@@ -254,14 +255,13 @@
                         <div class="address">
                           <h3>Classes</h3>
                           <ul class="Menu_footer">
-                            <li class="active"> <a href="#">Kindergarten (Reception, PP1, PP2)</a> </li>
-                            <li><a href="#">Junior Primary(Grade 1, Grade 2, Grade 3)</a> </li>
-                            <li><a href="#">Senior Primary(Grade 4, Grade 5, Grade 6)</a> </li>
+                            <li class="active"> <a href="#">Kindergarten(Reception, PP1, PP2)</a> </li>
+                            <li><a href="#">Primary(Grade 1, Grade 2, Grade 3)</a> </li>
+                            <li><a href="#">Primary(Grade 4, Grade 5, Grade 6)</a> </li>
                             <li><a href="#">Junior Secondary(Grade 7, Grade 8, Grade 9)</a> </li>
                           </ul>
                         </div>
                       </div>
-
                       <div class="col-lg-3 col-md-6 col-sm-6 ">
                         <div class="address">
                           <a href="{% url 'home' %}"> <img src="{% static 'images/logo_down.png' %}" alt="logo"></a>

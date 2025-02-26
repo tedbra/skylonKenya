@@ -10,7 +10,6 @@ def HomeView(request):
     return render(request, 'home.html',{})
 
 
-
 class JobListView(ListView):
 
     model = Job

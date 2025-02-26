@@ -7,4 +7,5 @@ skylonvenv/
 # Ignore system files
 .DS_Store
 
-# Ignore the static folder
+# Ignore the __pycache__ folder
+__pycache__/
